@@ -2,7 +2,8 @@ Feature: ORDS API
 
   Scenario: Q1
     Given accept type is JSON
-    And path parameter value "US"
+    #And path parameter value "US"
+    And Query param value "q" and '{"country_id": "US"}'
     When user sends request to "/countries"
     Then status code is 200
     And content type is JSON

@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-21T04:43:37.032Z",
+        "start_timestamp": "2021-08-21T04:57:27.252Z",
         "line": 3,
         "name": "Q1",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 457000000,
+              "duration": 426000000,
               "status": "passed"
             },
             "line": 4,
@@ -28,25 +28,29 @@
               "duration": 91000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "path parameter value \"US\"",
+            "line": 6,
+            "name": "Query param value \"q\" and \u0027{\"country_id\": \"US\"}\u0027",
             "match": {
               "arguments": [
                 {
-                  "val": "\"US\"",
-                  "offset": 21
+                  "val": "\"q\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\u0027{\"country_id\": \"US\"}\u0027",
+                  "offset": 26
                 }
               ],
-              "location": "com.cybertek.step_definitions.Steps.path_parameter_value(java.lang.String)"
+              "location": "com.cybertek.step_definitions.Steps.query_param_value_and(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 837000000,
+              "duration": 833000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "user sends request to \"/countries\"",
             "match": {
               "arguments": [
@@ -64,7 +68,7 @@
               "duration": 1000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "status code is 200",
             "match": {
               "arguments": [
@@ -81,7 +85,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "content type is JSON",
             "match": {
               "location": "com.cybertek.step_definitions.Steps.content_type_is_json()"
@@ -90,10 +94,10 @@
           },
           {
             "result": {
-              "duration": 371000000,
+              "duration": 351000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "country_id is \"US\"",
             "match": {
               "arguments": [
@@ -108,10 +112,10 @@
           },
           {
             "result": {
-              "duration": 8000000,
+              "duration": 9000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "country_name is \"United States of America\"",
             "match": {
               "arguments": [
@@ -129,7 +133,7 @@
               "duration": 7000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "region_id is 2",
             "match": {
               "arguments": [
@@ -145,8 +149,8 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-21T04:43:38.864Z",
-        "line": 13,
+        "start_timestamp": "2021-08-21T04:57:29.027Z",
+        "line": 14,
         "name": "Q2",
         "description": "",
         "id": "ords-api;q2",
@@ -158,7 +162,7 @@
               "duration": 1000000,
               "status": "passed"
             },
-            "line": 14,
+            "line": 15,
             "name": "accept type is JSON",
             "match": {
               "location": "com.cybertek.step_definitions.Steps.accept_type_is_json()"
@@ -167,10 +171,9 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "Query param value \"q\" and \u0027{\"department_id\":80}\u0027",
             "match": {
               "arguments": [
@@ -189,10 +192,10 @@
           },
           {
             "result": {
-              "duration": 397000000,
+              "duration": 468000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 17,
             "name": "user sends request to \"/employees\"",
             "match": {
               "arguments": [
@@ -209,7 +212,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 17,
+            "line": 18,
             "name": "status code is 200",
             "match": {
               "arguments": [
@@ -226,7 +229,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "content type is JSON",
             "match": {
               "location": "com.cybertek.step_definitions.Steps.content_type_is_json()"
@@ -235,10 +238,10 @@
           },
           {
             "result": {
-              "duration": 26000000,
+              "duration": 27000000,
               "status": "passed"
             },
-            "line": 19,
+            "line": 20,
             "name": "all job_ids start with \"SA\"",
             "match": {
               "arguments": [
@@ -253,10 +256,9 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
-            "line": 20,
+            "line": 21,
             "name": "all department_ids are 80",
             "match": {
               "arguments": [
@@ -273,7 +275,7 @@
             "result": {
               "status": "passed"
             },
-            "line": 21,
+            "line": 22,
             "name": "count is 25",
             "match": {
               "arguments": [

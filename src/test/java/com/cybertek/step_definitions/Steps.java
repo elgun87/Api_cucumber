@@ -28,10 +28,10 @@ public class Steps {
       request = given().contentType(ContentType.JSON);
     }
 
-    @Given("path parameter value {string}")
-    public void path_parameter_value(String country_initials) {
-        request.queryParams("q","{\"country_id\":\""+country_initials+"\"}");
-    }
+//    @Given("path parameter value {string}")
+//    public void path_parameter_value(String country_initials) {
+//        request.queryParams("q","{\"country_id\":\""+country_initials+"\"}");
+//    }
 
     @When("user sends request to {string}")
     public void user_sends_request_to(String end_point) {
