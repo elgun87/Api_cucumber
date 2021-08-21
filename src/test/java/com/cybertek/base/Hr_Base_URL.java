@@ -8,10 +8,4 @@ import static io.restassured.RestAssured.baseURI;
 public class Hr_Base_URL {
     public static final String HR_BASE_URL = "http://54.196.159.166:1000/ords/hr";
     public static final String COUNTRIES = "/countries";
-
-    @BeforeAll
-    public static void init() {
-        baseURI = HR_BASE_URL;
-        basePath = COUNTRIES;
-    }
 }
