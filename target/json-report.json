@@ -1,0 +1,299 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-21T04:43:37.032Z",
+        "line": 3,
+        "name": "Q1",
+        "description": "",
+        "id": "ords-api;q1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 457000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "accept type is JSON",
+            "match": {
+              "location": "com.cybertek.step_definitions.Steps.accept_type_is_json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "path parameter value \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"US\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.path_parameter_value(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 837000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user sends request to \"/countries\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/countries\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.user_sends_request_to(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "content type is JSON",
+            "match": {
+              "location": "com.cybertek.step_definitions.Steps.content_type_is_json()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 371000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "country_id is \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"US\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.country_id_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "country_name is \"United States of America\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"United States of America\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.country_name_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "region_id is 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.region_id_is(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-21T04:43:38.864Z",
+        "line": 13,
+        "name": "Q2",
+        "description": "",
+        "id": "ords-api;q2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "accept type is JSON",
+            "match": {
+              "location": "com.cybertek.step_definitions.Steps.accept_type_is_json()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Query param value \"q\" and \u0027{\"department_id\":80}\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"q\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\u0027{\"department_id\":80}\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.query_param_value_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 397000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user sends request to \"/employees\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/employees\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.user_sends_request_to(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "content type is JSON",
+            "match": {
+              "location": "com.cybertek.step_definitions.Steps.content_type_is_json()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "all job_ids start with \"SA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SA\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.all_job_ids_start_with(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "all department_ids are 80",
+            "match": {
+              "arguments": [
+                {
+                  "val": "80",
+                  "offset": 23
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.all_department_ids_are(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "count is 25",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 9
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Steps.count_is(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ORDS API",
+    "description": "",
+    "id": "ords-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api.feature",
+    "tags": []
+  }
+]
